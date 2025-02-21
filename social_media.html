@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    /* General styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #ff7e5f, #feb47b); /* Attractive gradient */
+      color: #fff;
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+    }
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      line-height: 1.8;
+    }
+    /* Social Media Buttons */
+    .social-media {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 30px;
+    }
+    .social-media a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 24px;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      transition: transform 0.3s, background-color 0.3s;
+    }
+    .social-media a.facebook { background-color: #3b5998; }
+    .social-media a.twitter { background-color: #1da1f2; }
+    .social-media a.instagram { background-color: #e1306c; }
+    .social-media a.linkedin { background-color: #0077b5; }
+    .social-media a.youtube { background-color: #ff0000; }
+    .social-media a:hover {
+      transform: scale(1.1);
+      opacity: 0.8;
+    }
+    footer {
+      margin-top: 50px;
+      text-align: center;
+      font-size: 14px;
+      color: #fff;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 10px 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Our Home Page</h1>
+  </header>
+  <div class="hero">
+    <h1>Explore Our Services</h1>
+    <p>Your journey begins here! Discover exciting travel and ride-sharing experiences tailored for you.</p>
+    <div class="social-media">
+      <a href="https://www.facebook.com" class="facebook" target="_blank" aria-label="Facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.twitter.com" class="twitter" target="_blank" aria-label="Twitter">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="https://www.instagram.com" class="instagram" target="_blank" aria-label="Instagram">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://www.linkedin.com" class="linkedin" target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://www.youtube.com" class="youtube" target="_blank" aria-label="YouTube">
+        <i class="fab fa-youtube"></i>
+      </a>
+    </div>
+  </div>
+  <footer>
+    &copy; 2024 Your Company Name. All Rights Reserved.
+  </footer>
+</body>
+</html>

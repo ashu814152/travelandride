@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Travel & Ride</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      color: #333;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    header {
+      background: linear-gradient(135deg, #2c3e50, #3498db);
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    header h1 {
+      font-size: 3em;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    section {
+      padding: 30px;
+    }
+
+    section h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+      color: #2c3e50;
+      border-bottom: 3px solid #3498db;
+      display: inline-block;
+    }
+
+    .contact-content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .contact-info {
+      flex: 1;
+      min-width: 300px;
+      padding: 20px;
+      background: #f6f6f6;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .contact-info h3 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      color: #3498db;
+    }
+
+    .contact-info p {
+      margin-bottom: 10px;
+      font-size: 1em;
+    }
+
+    .contact-form {
+      flex: 2;
+      min-width: 300px;
+    }
+
+    .contact-form form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .contact-form button {
+      padding: 10px 15px;
+      font-size: 1.2em;
+      color: white;
+      background: #3498db;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .contact-form button:hover {
+      background: #2c3e50;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      padding: 20px;
+      background: #2c3e50;
+      color: white;
+      border-radius: 0 0 10px 10px;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Contact Us</h1>
+      <p>We’re here to help! Get in touch with us for any travel or ride-related inquiries.</p>
+    </header>
+    <section>
+      <h2>Get in Touch</h2>
+      <div class="contact-content">
+        <!-- Contact Information -->
+        <div class="contact-info">
+          <h3>Our Office</h3>
+          <p><strong>Address:</strong> 123 Travel Road, Cityville, Country</p>
+          <p><strong>Phone:</strong> +123 456 7890</p>
+          <p><strong>Email:</strong> support@travelride.com</p>
+          <p><strong>Working Hours:</strong> Mon - Sat: 9 AM - 6 PM</p>
+        </div>
+        <!-- Contact Form -->
+        <div class="contact-form">
+          <h3>Send Us a Message</h3>
+          <form action="https://example.com/submit-form" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="subject" placeholder="Subject" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>&copy; 2024 Travel & Ride. All Rights Reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>

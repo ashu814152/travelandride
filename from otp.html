@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WhatsApp OTP Verification</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f9;
+      padding: 20px;
+    }
+    .container {
+      max-width: 400px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    .btn {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      color: #fff;
+      background: #007bff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .btn:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Verify OTP</h2>
+    <div class="form-group">
+      <label for="phone">Phone Number (WhatsApp)</label>
+      <input type="text" id="phone" placeholder="Enter your WhatsApp number">
+    </div>
+    <button class="btn" onclick="sendOTP()">Send OTP</button>
+
+    <div class="form-group" style="margin-top: 20px;">
+      <label for="otp">Enter OTP</label>
+      <input type="text" id="otp" placeholder="Enter the OTP">
+    </div>
+    <button class="btn" onclick="verifyOTP()">Verify OTP</button>
+  </div>
+
+  <script>
+    const sendOTP = async () => {
+      const phoneNumber = document.getElementById('phone').value;
+      const response = await fetch('/send-otp', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ phoneNumber }),
+      });
+      const data = await response.json();
+      alert(data.message);
+    };
+
+    const verifyOTP = async () => {
+      const phoneNumber = document.getElementById('phone').value;
+      const otp = document.getElementById('otp').value;
+      const response = await fetch('/verify-otp', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ phoneNumber, otp }),
+      });
+      const data = await response.json();
+      alert(data.message);
+    };
+  </script>
+</body>
+</html>

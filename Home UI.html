@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home | Unified UI</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      background: linear-gradient(135deg, #4facfe, #00f2fe);
+      color: #333;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      overflow: hidden;
+    }
+
+    header {
+      background: linear-gradient(135deg, #2c3e50, #3498db);
+      color: white;
+      padding: 20px 20px;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .navbar .logo {
+      font-size: 2em;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+    }
+
+    .navbar ul li {
+      display: inline;
+    }
+
+    .navbar ul li a {
+      text-decoration: none;
+      color: white;
+      font-size: 1.1em;
+      transition: color 0.3s;
+    }
+
+    .navbar ul li a:hover {
+      color: #ff9800;
+    }
+
+    .btn {
+      background: #ff9800;
+      color: white;
+      padding: 10px 20px;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-size: 1.1em;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background: #e67e22;
+    }
+
+    section {
+      padding: 40px 20px;
+    }
+
+    section h2 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+      color: #2c3e50;
+      text-align: center;
+    }
+
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .feature-item {
+      flex: 1;
+      min-width: 280px;
+      background: #f6f6f6;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .feature-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .feature-item h3 {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+      color: #3498db;
+    }
+
+    .social-media {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .social-media a {
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 2em;
+      color: #3498db;
+      transition: color 0.3s;
+    }
+
+    .social-media a:hover {
+      color: #2c3e50;
+    }
+
+    .cta {
+      background: linear-gradient(135deg, #8e44ad, #3498db);
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+      border-radius: 10px;
+      margin-top: 30px;
+    }
+
+    .cta h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    .cta p {
+      font-size: 1.2em;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      text-align: center;
+      background: #2c3e50;
+      color: white;
+      padding: 20px;
+      margin-top: 40px;
+      border-radius: 0 0 10px 10px;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 0.9em;
+    }
+
+    footer a {
+      color: #e1340d;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    .whatsapp-popup {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25d366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.5em;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s;
+      z-index: 1000;
+    }
+
+    .whatsapp-popup:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header Section -->
+    <header>
+      <div class="navbar">
+        <div class="logo">Travel & Ride</div>
+        <ul>
+          <li><a href="About_us.html">About</a></li>
+          <li><a href="contact_us.html">Contact</a></li>
+          <li><a href="Services.html">Terms</a></li>
+          <li><a href="Policy Page.html">Privacy Policy</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="social_media.html\">Profile</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Features Section -->
+    <section id="services">
+      <h2>Our Services</h2>
+      <div class="features">
+        <div class="feature-item">
+          <h3>City Rides</h3>
+          <p>Quick, convenient, and affordable rides within the city.</p>
+        </div>
+        <div class="feature-item">
+          <h3>Outstation Travel</h3>
+          <p>Enjoy safe and luxurious long-distance travel.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <div class="social-media">
+      <h2>Follow Us</h2>
+      <a href="https://facebook.com" target="_blank">🔵</a>
+      <a href="https://twitter.com" target="_blank">🔷</a>
+      <a href="https://instagram.com" target="_blank">🟣</a>
+    </div>
+
+    <!-- Call-to-Action Section -->
+    <section class="cta">
+      <h2>Ready to Ride?</h2>
+      <p>Join thousands of happy travelers. Book your ride today!</p>
+      <a href="contact_us.html" class="btn">Contact Us</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Travel & Ride. All Rights Reserved. | <a href="Policy Page.html">Privacy Policy</a></p>
+    </footer>
+
+    <!-- WhatsApp Help Popup -->
+    <div class="whatsapp-popup" onclick="window.open('https://wa.me/+916205613371', '_blank')">
+      💬
+    </div>
+  </div>
+</body>
+</html>
